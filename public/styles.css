@@ -1,0 +1,37 @@
+:root { --bg:#0b1020; --card:#141b34; --text:#eaf0ff; --muted:#a8b3cf; --acc:#79ffa8; --warn:#ffd166; --over:#ff6b6b; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; background: var(--bg); color: var(--text); }
+header { display:flex; align-items:center; gap:16px; padding:16px 20px; position:sticky; top:0; background: linear-gradient(to bottom, rgba(11,16,32,.9), rgba(11,16,32,.6) 70%, transparent); backdrop-filter: blur(6px); }
+h1 { font-size: 22px; margin:0; }
+#stats { margin-left:auto; color: var(--muted); }
+button { background: var(--card); color: var(--text); border:1px solid #2a345e; border-radius: 10px; padding:10px 14px; cursor:pointer; }
+button:hover { border-color:#41529a; }
+main { display:grid; grid-template-columns: 1fr 420px; gap:16px; padding:16px; }
+#list { display:grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap:16px; }
+.card { background: var(--card); border:1px solid #1f274a; border-radius: 14px; padding:14px; display:flex; flex-direction:column; gap:8px; }
+.card h3 { margin:0; font-size:18px; }
+.meta { color: var(--muted); font-size: 13px; }
+.badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; border:1px solid #2a345e; }
+.badge.overdue { border-color: var(--over); color: var(--over); }
+.badge.due { border-color: var(--warn); color: var(--warn); }
+.badge.ok { border-color: var(--acc); color: var(--acc); }
+.actions { display:flex; gap:8px; margin-top:8px; }
+.hidden { display:none; }
+#detail { position: sticky; top:72px; height: calc(100dvh - 88px); overflow: auto; background: var(--card); border:1px solid #1f274a; border-radius: 14px; padding:16px; }
+#detail h2 { margin-top:0; }
+hr { border:0; border-top:1px solid #1f274a; margin:12px 0; }
+label { display:flex; flex-direction:column; gap:6px; margin:6px 0; font-size:14px; }
+input, textarea { background:#0e1430; color:var(--text); border:1px solid #24305c; border-radius:10px; padding:10px; }
+dialog { border:1px solid #24305c; border-radius:14px; background: var(--card); color: var(--text); width: 520px; }
+menu { display:flex; gap:8px; justify-content:flex-end; padding:0; margin-top:8px; }
+.small { font-size:12px; color: var(--muted); }
+.delete { border-color:#5b1d2a; color:#ff9ba8; }
+.auth { display:flex; gap:.5rem; align-items:center; }
+.hidden { display:none; }
+.plant-card { border:1px solid #ddd; border-radius:8px; padding:12px; margin:8px 0; }
+.row { display:flex; gap:.5rem; margin-top:.5rem; }
+#authFallback { border:1px solid #ddd; padding:12px; margin:12px 0; border-radius:8px; }
+#authFallback form { display:flex; gap:.5rem; align-items:end; flex-wrap:wrap; }
+#authFallback label { display:flex; flex-direction:column; }
+/* public/styles.css */
+.hidden { display: none; }

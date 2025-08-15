@@ -1,0 +1,17 @@
+{
+  "Pothos": {
+    "light": "Bright indirect to low light.",
+    "water": "Water when top 1–2 inches are dry (about weekly).",
+    "notes": "Tolerant and great for beginners."
+  },
+  "Snake Plant": {
+    "light": "Low to bright indirect.",
+    "water": "Let soil dry out fully; every 2–3 weeks.",
+    "notes": "Avoid overwatering; great in low light."
+  },
+  "Spider Plant": {
+    "light": "Bright indirect.",
+    "water": "Keep lightly moist; weekly.",
+    "notes": "Produces offshoots you can propagate."
+  }
+}
